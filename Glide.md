@@ -20,3 +20,13 @@ Glide
     .apply(RequestOptions.circleCropTransform())
     .into( mBinding.element )
 ```
+
+## Center Crop
+
+```
+Glide
+    .with(this)
+    .apply(RequestOptions.centerCropTransform())
+    .load( url )
+    .into( mBinding.element )
+```
