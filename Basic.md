@@ -119,11 +119,30 @@ Handler().postDelayed({
 # 6. Service
 
 ## 6.1 Detect Network is Connected
+
 ```
 fun isNetworkConnected(mActivity: Activity) : Boolean {
     val connectivityManager ConnectivityManager = mActivity.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
     val activeNetwork = connectivityManager.activeNetworkInfo
 
     return (activeNetwork != null && activeNetwork.isConnectedOrConnecting)
+}
+```
+
+# 7. JSON
+
+## 7.1 Parse JSON Data
+
+```
+fun parseJson(str: String) : JsonObject? {
+  var result: JsonObject?
+  var jsonParser = JsonParser()
+  result = jSonObject = jsonParser.parse(str) as JsonObject
+}
+
+fun parseJson(str: String) : JsonArray? {
+  var result: JsonObject?
+  var jsonParser = JsonParser()
+  result = jSonObject = jsonParser.parse(str) as JsonArray
 }
 ```
