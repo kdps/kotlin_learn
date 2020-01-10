@@ -14,6 +14,12 @@ class YourActivity : BaseActivity() {
 }
 ```
 
+## Finish Fragment Of Activity
+
+```
+((activity as YourActivity).getFragment() as YourFragment).fragmentFinish()
+```
+
 ## DataBinding (Fragment)
 
 ```
