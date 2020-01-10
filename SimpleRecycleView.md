@@ -5,7 +5,7 @@
 ```
 class YourCell(item: YourInfo) : SimpleCell<YourInfo, YourCell.ViewHolder>(item) {
     override fun getLayoutRes(): Int {
-        return R.layout.layout_activity_log_item
+        return R.layout.your_activity
     }
     
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeViewHolder {
