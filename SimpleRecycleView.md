@@ -1,5 +1,36 @@
 # com.jaychang.srv.SimpleRecyclerView
 
+## Define the cell (ViewHolder)
+
+```
+class YourCell(item: YourInfo) : SimpleCell<YourInfo, YourCell.ViewHolder>(item) {
+    override fun getLayoutRes(): Int {
+        return R.layout.layout_activity_log_item
+    }
+    
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeViewHolder {
+        //LayoutInflater.from(parent.context).inflate(getLayoutRes(), parent, false).let { return ViewHolder(it) }
+        val inflater = LayoutInflater.from(parent.context)
+        val view = inflater.inflate(getLayoutRes(), parent, false)
+        
+        return ViewHolder(view)
+    }
+    
+    override fun onBindViewHolder(holder: ViewHolder, position: Int, context: Context, payload: Any?) {
+         holder.binding.run {
+         }
+    }
+    
+    class ViewHolder : SimpleViewHolder {
+        var binding: YourActivityBinding
+
+        constructor(itemView: View) : super(itemView) {
+            binding = DataBindingUtil.bind(itemView)!!
+        }
+    }
+}
+```
+
 ## Update Cell Item
 
 1.Call Function -> mBinding.rvList.updateCell(index, payload)
