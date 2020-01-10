@@ -1,3 +1,5 @@
+# Activity
+
 ## DataBinding (Activity)
 
 Layout XML Name : activity_basic.xml
@@ -13,6 +15,8 @@ class YourActivity : BaseActivity() {
   
 }
 ```
+
+# Fragment
 
 ## Finish Fragment Of Activity
 
