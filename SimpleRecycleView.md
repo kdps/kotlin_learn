@@ -12,10 +12,7 @@
 
 val map = java.util.HashMap<String, Boolean>()
 map.put("hasLike", "true")
-
-var payLoad = ArrayList<HashMap<String, Boolean>>()
-payLoad.add(map)
-mBinding.rvList.updateCell((currentItem.tag as TalkOurInfo).index, payLoad)
+mBinding.rvList.updateCell(position, map)
 
  -> Cell
  
