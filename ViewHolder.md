@@ -1,3 +1,6 @@
+
+## Add Cell EventListner
+
 ```
 class BaseCell(item: BaseInfo) : SimpleCell<BaseInfo, TalkCommentCell.ViewHolder> (item) {
 
