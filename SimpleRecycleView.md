@@ -2,9 +2,9 @@
 
 ## Update Cell Item
 
-1.You Call Function -> mBinding.rvList.updateCell(index, payload)
+1.Call Function -> mBinding.rvList.updateCell(index, payload)
 
-2.System Call Method -> onBindViewHolder(holder: ViewHolder, position: Int, context: Context, payload: Any?)
+2.Callback -> onBindViewHolder(holder: ViewHolder, position: Int, context: Context, payload: Any?)
 
 ### Example
 
