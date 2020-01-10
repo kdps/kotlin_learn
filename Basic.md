@@ -1,6 +1,6 @@
-# Activity
+# 1. Activity
 
-## DataBinding (Activity)
+## 1.1 DataBinding (Activity)
 
 Layout XML Name : activity_basic.xml
 
@@ -16,15 +16,9 @@ class YourActivity : BaseActivity() {
 }
 ```
 
-# Fragment
+# 2. Fragment
 
-## Finish Fragment Of Activity
-
-```
-((activity as YourActivity).getFragment() as YourFragment).fragmentFinish()
-```
-
-## DataBinding (Fragment)
+## 2.1 DataBinding (Fragment)
 
 ```
 class YourFragment : BaseFragment() {
@@ -47,7 +41,15 @@ class YourFragment : BaseFragment() {
 }
 ```
 
-## Set Drawable To Element
+## 2.2 Finish Fragment Of Activity
+
+```
+((activity as YourActivity).getFragment() as YourFragment).fragmentFinish()
+```
+
+# 3. Drawable
+
+## 3.1 Set Drawable To Element
 
 ```
 var imageDrawable = R.drawable.image
