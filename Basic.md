@@ -1,4 +1,4 @@
-## Set Drawable Of Element
+## Set Drawable To Element
 
 ```
 var imageDrawable = R.drawable.image
