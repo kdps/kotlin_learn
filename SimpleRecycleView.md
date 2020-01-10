@@ -8,7 +8,7 @@
 
 ### Example
 
-####Fragment
+Fragment
 
 ```
 val map = java.util.HashMap<String, Boolean>()
@@ -16,7 +16,7 @@ map.put("hasLike", "true")
 mBinding.rvList.updateCell(position, map)
 ```
 
-####Cell
+Cell
 
 ```
 override fun onBindViewHolder(holder: ViewHolder, position: Int, context: Context, payload: Any?) {
