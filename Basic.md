@@ -122,7 +122,8 @@ Handler().postDelayed({
 ```
 fun isNetworkConnected(mActivity: Activity) : Boolean {
     val connectivityManager ConnectivityManager = mActivity.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+    val activeNetwork = connectivityManager.activeNetworkInfo
 
-    return connectivityManager.activeNetworkInfo != null
+    return (activeNetwork != null && activeNetwork.isConnectedOrConnecting)
 }
 ```
