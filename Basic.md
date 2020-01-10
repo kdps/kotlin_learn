@@ -115,3 +115,14 @@ Handler().postDelayed({
   // Input Code
 },delayMillis:Int = 1000)
 ```
+
+# 6. Service
+
+## 6.1 Detect Network is Connected
+```
+fun isNetworkConnected(mActivity: Activity) : Boolean {
+    val connectivityManager ConnectivityManager = mActivity.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+
+    return connectivityManager.activeNetworkInfo != null
+}
+```
