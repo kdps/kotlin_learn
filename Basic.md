@@ -105,3 +105,13 @@ Glide
     .load( url )
     .into( mBinding.element )
 ```
+
+# 5. Handler
+
+## 5.1 postDelayed
+
+```
+Handler().postDelayed({
+  // Input Code
+},delayMillis:Int = 1000)
+```
