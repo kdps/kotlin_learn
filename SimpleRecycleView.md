@@ -1,6 +1,6 @@
 # com.jaychang.srv.SimpleRecyclerView
 
-## Define the cell (ViewHolder)
+# Define the cell (ViewHolder)
 
 ```
 class YourCell(item: YourInfo) : SimpleCell<YourInfo, YourCell.ViewHolder>(item) {
@@ -31,7 +31,7 @@ class YourCell(item: YourInfo) : SimpleCell<YourInfo, YourCell.ViewHolder>(item)
 }
 ```
 
-## Update Cell Item
+# Update Cell Item
 
 1.Call Function -> mBinding.rvList.updateCell(index, payload)
 
