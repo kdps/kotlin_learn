@@ -12,7 +12,7 @@ Fragment
 
 ```
 val map = java.util.HashMap<String, Boolean>()
-map.put("hasLike", "true")
+map.put("hasLike", true)
 mBinding.rvList.updateCell(position, map)
 ```
 
