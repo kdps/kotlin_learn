@@ -10,20 +10,18 @@
 
 ####Fragment
 
+'''
 val map = java.util.HashMap<String, Boolean>()
-
 map.put("hasLike", "true")
-
 mBinding.rvList.updateCell(position, map)
+'''
 
 ####Cell
 
+'''
 override fun onBindViewHolder(holder: ViewHolder, position: Int, context: Context, payload: Any?) {
-
     if (payload is HashMap<*, *>) {
-    
         print(payload.get(0).toString())
-        
     }
-    
 }
+'''
