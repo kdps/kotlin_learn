@@ -1,3 +1,9 @@
+# 0. Fuck You Android 
+
+### Do not set tag to ImageView
+
+Your application is crash because android is fucking garbage
+
 # 1. Activity
 
 ## 1.1 DataBinding (Activity)
