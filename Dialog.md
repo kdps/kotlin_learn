@@ -4,7 +4,7 @@
 
 Warning : `Do not use android:onClick Event in Layout XML File`
 
-```
+```Kotlin
 val mDialogBinding: LayoutBasicBinding = DataBindingUtil.inflate(getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater, R.layout.layout_basic, null, false)
 var mDialog = Dialog(mActivity)
 mDialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
