@@ -5,11 +5,12 @@ val mDialogBinding: LayoutBasicBinding = DataBindingUtil.inflate(getSystemServic
 var mDialog = Dialog(mActivity)
 mDialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
 mDialog.window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-mDialog.setContentView(mDialogBinding.root)
 
 mDialogBinding.btnClose.setOnClickListener {
     mDialog.dismiss()
 }
+
+mDialog.setContentView(mDialogBinding.root) // This method call when you finished add event of elements
 
 mDialog.setCancelable(true)
 mDialog.show()
