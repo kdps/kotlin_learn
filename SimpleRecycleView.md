@@ -2,7 +2,7 @@
 
 # Define the cell (ViewHolder)
 
-```
+```Kotlin
 class YourCell(item: YourInfo) : SimpleCell<YourInfo, YourCell.ViewHolder>(item) {
     override fun getLayoutRes(): Int {
         return R.layout.your_activity
@@ -41,7 +41,7 @@ class YourCell(item: YourInfo) : SimpleCell<YourInfo, YourCell.ViewHolder>(item)
 
 Fragment
 
-```
+```Kotlin
 val map = java.util.HashMap<String, Boolean>()
 map.put("hasLike", true)
 mBinding.rvList.updateCell(position, map)
@@ -49,7 +49,7 @@ mBinding.rvList.updateCell(position, map)
 
 Cell
 
-```
+```Kotlin
 override fun onBindViewHolder(holder: ViewHolder, position: Int, context: Context, payload: Any?) {
     holder.binding.run {
         if (payload is HashMap<*, *>) {
