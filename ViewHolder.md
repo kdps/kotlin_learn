@@ -3,7 +3,7 @@
 
 Cell Class
 
-```
+```Kotlin
 class BaseCell(item: BaseInfo) : SimpleCell<BaseInfo, TalkCommentCell.ViewHolder> (item) {
 
   lateinit var mListener: View.OnClickListener
@@ -21,7 +21,7 @@ class BaseCell(item: BaseInfo) : SimpleCell<BaseInfo, TalkCommentCell.ViewHolder
 
 BaseActivity
 
-```
+```Kotlin
 class YourActivity : BaseActivity() {
 
   fun setCellEvent(cell: BaseCell) {
