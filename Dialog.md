@@ -32,7 +32,7 @@ mDialogBinding.btnSubmit.setOnClickListener {v ->
 
 # 3. Window Control
 
-## 3.1. Resize Dialog
+## 3.1. Get Size of Dialog
 
 ### 3.1.1. Get DisplayMetrics
 
@@ -61,7 +61,7 @@ fun getWidthPixels() {
 }
 ```
 
-## 3.1.3. Get Dialog Window Size
+### 3.1.3. Get Dialog Window Size
 
 ```Kotlin
 fun getWindowAttributes(mDialog: Dialog) {
@@ -75,4 +75,15 @@ fun getWindowWidth(mDialog: Dialog) {
 fun getWindowHeight(mDialog: Dialog) {
     return getWindowAttributes(mDialog).height
 }
+```
+
+## 3.2. Set Dialog Size
+
+### 3.2.1. Set Attributes of Dialog Windows Size
+
+```
+var params = getWindowAttributes(mDialog)
+params.width = getWindowWidth(mDialog)
+params.height = getWindowHeight(mDialog)
+mDialog.window!!.attributes = params
 ```
