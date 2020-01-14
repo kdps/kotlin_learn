@@ -1,4 +1,6 @@
-# 1. Show Dialog (With DataBinding)
+# 1. Dialog Control
+
+## 1.1. Show Dialog (With DataBinding)
 
 Warning : `Do not use android:onClick Event in Layout XML File`
 
@@ -18,7 +20,9 @@ mDialog.setCancelable(true)
 mDialog.show()
 ```
 
-# 2. Get Data Of Dialog
+# 2. Data Control
+
+## 2.1. Get Data Of Dialog
 
 ```
 mDialogBinding.btnSubmit.setOnClickListener {v ->
@@ -26,9 +30,11 @@ mDialogBinding.btnSubmit.setOnClickListener {v ->
 }
 ```
 
-# 3. Resize Dialog
+# 3. Window Control
 
-## 3.1 Get DisplayMetrics
+## 3.1. Resize Dialog
+
+### 3.1.1. Get DisplayMetrics
 
 ```
 fun getDisplayMetrics() {
@@ -39,7 +45,7 @@ fun getDisplayMetrics() {
 }
 ```
 
-## 3.2 Get DIsplay Pixels
+### 3.1.2. Get DIsplay Pixels
 
 ```
 fun getWidthPixels() {
@@ -55,7 +61,7 @@ fun getWidthPixels() {
 }
 ```
 
-# 4. Get Dialog Window Size
+## 3.1.3. Get Dialog Window Size
 
 ```
 fun getWindowAttributes(mDialog: Dialog) {
