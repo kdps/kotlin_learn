@@ -87,3 +87,12 @@ params.width = getWindowWidth(mDialog)
 params.height = getWindowHeight(mDialog)
 mDialog.window!!.attributes = params
 ```
+
+### 3.2.2 Use Layout Parameter
+
+```Kotlin
+var params = getWindowAttributes(mDialog)
+params.width = WindowManager.LayoutParams.WRAP_CONTENT
+params.height = WindowManager.LayoutParams.MATCH_PARENT
+mDialog.window!!.attributes = params
+```
