@@ -14,3 +14,31 @@ mDialogBinding.btnClose.setOnClickListener {
 mDialog.show()
 ```
 
+# 2. Resize Dialog
+
+## 2.1 Get DisplayMetrics
+
+```
+fun getDisplayMetrics() {
+    val displayMetrics = DisplayMetrics()
+    windowManager.defaultDisplay.getMetrics(displayMetrics)
+    
+    return displayMetrics
+}
+```
+
+## 2.2 Get DIsplay Pixels
+
+```
+fun getWidthPixels() {
+    var displayMetrics = getDisplayMetrics()
+    val displayWidth = displayMetrics.widthPixels
+    return displayWidth
+}
+
+fun getWidthPixels() {
+    var displayMetrics = getDisplayMetrics()
+    val displayWidth = displayMetrics.heightPixels
+    return displayWidth
+}
+```
