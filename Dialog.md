@@ -8,7 +8,7 @@ var mDialog = Dialog(mActivity)
 mDialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
 mDialog.window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
-mDialogBinding.btnClose.setOnClickListener {
+mDialogBinding.btnClose.setOnClickListener {v ->
     mDialog.dismiss()
 }
 
