@@ -12,7 +12,7 @@ mDialogBinding.btnClose.setOnClickListener {
     mDialog.dismiss()
 }
 
-mDialog.setContentView(mDialogBinding.root) // This method call when you finished add event of elements
+mDialog.setContentView(mDialogBinding.root)
 
 mDialog.setCancelable(true)
 mDialog.show()
