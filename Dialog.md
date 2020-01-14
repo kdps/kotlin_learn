@@ -1,5 +1,7 @@
 # 1. Show Dialog (With DataBinding)
 
+Warning : `Do not use android:onClick Event in Layout XML File`
+
 ```
 val mDialogBinding: LayoutBasicBinding = DataBindingUtil.inflate(getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater, R.layout.layout_basic, null, false)
 var mDialog = Dialog(mActivity)
