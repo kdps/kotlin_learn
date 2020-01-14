@@ -1,4 +1,4 @@
-```
+```Kotlin
 class BaseInformation : Serializable, BaseObservable {
     var data = ""
 
