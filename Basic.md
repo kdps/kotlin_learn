@@ -10,7 +10,7 @@ Your application is crash because android is fucking garbage
 
 Layout XML Name : activity_basic.xml
 
-```
+```Kotlin
 class YourActivity : BaseActivity() {
   lateinit var mBinding: ActivityBasicBinding
   
@@ -26,7 +26,7 @@ class YourActivity : BaseActivity() {
 
 ## 2.1 DataBinding (Fragment)
 
-```
+```Kotlin
 class YourFragment : BaseFragment() {
   
     lateinit var mBinding: YourFragment
@@ -49,7 +49,7 @@ class YourFragment : BaseFragment() {
 
 ## 2.2 Finish Fragment Of Activity
 
-```
+```Kotlin
 ((activity as YourActivity).getFragment() as YourFragment).fragmentFinish()
 ```
 
@@ -57,7 +57,7 @@ class YourFragment : BaseFragment() {
 
 ## 3.1 Set Drawable To Element
 
-```
+```Kotlin
 var imageDrawable = R.drawable.image
 
 mBinding.element.setImageDrawable(
@@ -68,7 +68,7 @@ mBinding.element.setImageDrawable(
 )
 ```
 
-```
+```Kotlin
 mBinding.element.setImageDrawable(
   CommonLib.getDrawable(
     mActivity, 
@@ -81,7 +81,7 @@ mBinding.element.setImageDrawable(
 
 ## 4.1 Rounded Image
 
-```
+```Kotlin
 var requestOptions = RequestOptions()
 requestOptions = requestOptions.transforms(CenterCrop(), RoundedCorners(16))
 
@@ -94,7 +94,7 @@ Glide
 
 ## 4.2 Circle Crop Image
 
-```
+```Kotlin
 Glide
     .with(context)
     .load( url )
@@ -104,7 +104,7 @@ Glide
 
 ## 4.3 Center Crop
 
-```
+```Kotlin
 Glide
     .with(this)
     .apply(RequestOptions.centerCropTransform())
@@ -116,7 +116,7 @@ Glide
 
 ## 5.1 postDelayed
 
-```
+```Kotlin
 Handler().postDelayed({
   // Input Code
 },delayMillis:Int = 1000)
@@ -126,7 +126,7 @@ Handler().postDelayed({
 
 ## 6.1 Detect Network is Connected
 
-```
+```Kotlin
 fun isNetworkConnected(mActivity: Activity) : Boolean {
     val connectivityManager ConnectivityManager = mActivity.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
     val activeNetwork = connectivityManager.activeNetworkInfo
@@ -139,7 +139,7 @@ fun isNetworkConnected(mActivity: Activity) : Boolean {
 
 ## 7.1 Parse JSON Data
 
-```
+```Kotlin
 fun parseJson(str: String) : JsonObject? {
   var result: JsonObject?
   var jsonParser = JsonParser()
