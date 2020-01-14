@@ -18,6 +18,14 @@ mDialog.setCancelable(true)
 mDialog.show()
 ```
 
+# 2. Get Data Of Dialog
+
+```
+mDialogBinding.btnSubmit.setOnClickListener {v ->
+    var content = (mDialogBinding.submitContent as EditText).text.toString()
+}
+```
+
 # 2. Resize Dialog
 
 ## 2.1 Get DisplayMetrics
