@@ -26,9 +26,9 @@ mDialogBinding.btnSubmit.setOnClickListener {v ->
 }
 ```
 
-# 2. Resize Dialog
+# 3. Resize Dialog
 
-## 2.1 Get DisplayMetrics
+## 3.1 Get DisplayMetrics
 
 ```
 fun getDisplayMetrics() {
@@ -39,7 +39,7 @@ fun getDisplayMetrics() {
 }
 ```
 
-## 2.2 Get DIsplay Pixels
+## 3.2 Get DIsplay Pixels
 
 ```
 fun getWidthPixels() {
@@ -55,7 +55,7 @@ fun getWidthPixels() {
 }
 ```
 
-# 3. Get Dialog Window Size
+# 4. Get Dialog Window Size
 
 ```
 fun getWindowAttributes(mDialog: Dialog) {
