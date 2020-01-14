@@ -11,6 +11,7 @@ mDialogBinding.btnClose.setOnClickListener {
     mDialog.dismiss()
 }
 
+mDialog.setCancelable(true)
 mDialog.show()
 ```
 
