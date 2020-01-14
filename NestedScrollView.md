@@ -2,7 +2,7 @@
 
 ## 1.1 Detect Scrolling
 
-```
+```Kotlin
 mBinding.scrollDetect.setOnScrollChangeListener { v: NestedScrollView, _: Int, scrollY: Int, _: Int, oldScrollY: Int ->
   var gap = 0
   
