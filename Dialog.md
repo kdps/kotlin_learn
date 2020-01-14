@@ -42,3 +42,19 @@ fun getWidthPixels() {
     return displayWidth
 }
 ```
+
+# 3. Get Dialog Window Size
+
+```
+fun getWindowAttributes(mDialog: Dialog) {
+    return mDialog.window!!.attributes
+}
+
+fun getWindowWidth(mDialog: Dialog) {
+    return getWindowAttributes(mDialog).width
+}
+
+fun getWindowHeight(mDialog: Dialog) {
+    return getWindowAttributes(mDialog).height
+}
+```
