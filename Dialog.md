@@ -24,7 +24,7 @@ mDialog.show()
 
 ## 2.1. Get Data Of Dialog
 
-```
+```Kotlin
 mDialogBinding.btnSubmit.setOnClickListener {v ->
     var content = (mDialogBinding.submitContent as EditText).text.toString()
 }
@@ -36,7 +36,7 @@ mDialogBinding.btnSubmit.setOnClickListener {v ->
 
 ### 3.1.1. Get DisplayMetrics
 
-```
+```Kotlin
 fun getDisplayMetrics() {
     val displayMetrics = DisplayMetrics()
     windowManager.defaultDisplay.getMetrics(displayMetrics)
@@ -47,7 +47,7 @@ fun getDisplayMetrics() {
 
 ### 3.1.2. Get DIsplay Pixels
 
-```
+```Kotlin
 fun getWidthPixels() {
     var displayMetrics = getDisplayMetrics()
     val displayWidth = displayMetrics.widthPixels
@@ -63,7 +63,7 @@ fun getWidthPixels() {
 
 ## 3.1.3. Get Dialog Window Size
 
-```
+```Kotlin
 fun getWindowAttributes(mDialog: Dialog) {
     return mDialog.window!!.attributes
 }
