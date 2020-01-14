@@ -81,7 +81,7 @@ fun getWindowHeight(mDialog: Dialog) {
 
 ### 3.2.1. Set Attributes of Dialog Windows Size
 
-```
+```Kotlin
 var params = getWindowAttributes(mDialog)
 params.width = getWindowWidth(mDialog)
 params.height = getWindowHeight(mDialog)
