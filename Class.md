@@ -25,7 +25,7 @@ OR
 var data = Data().add()
 ```
 
-# Object Class
+# 2. Object Class
 
 Object Class Can't Use Variable of Class Variable
 
@@ -44,3 +44,5 @@ Usage
 ```Kotlin
 data.add()
 ```
+
+# 3. Companion Object
