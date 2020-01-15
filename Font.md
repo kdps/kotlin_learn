@@ -4,6 +4,28 @@
 
 # 2. Color
 
+# 2.1. Single
+
+# 2.2. Multiple
+
+# 2.2.1. TextView
+
+```Kotlin
+val textView = textViewElement
+
+val wordThree = SpannableString("3")
+wordThree.setSpan(ForegroundColorSpan(Color.parseColor("#F0A819")), 0, wordThree.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+textView.setText(wordThree)
+
+val wordTwo = SpannableString("2")
+wordTwo.setSpan(ForegroundColorSpan(Color.parseColor("#F0A819")), 0, wordTwo.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+textView.setText(wordTwo)
+
+val word = SpannableString("One")
+word.setSpan(ForegroundColorSpan(Color.BLACK), 0, word.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+textView.append(word)
+```
+
 # 3. Appearance
 
 ## 3.1. Single
@@ -15,7 +37,7 @@
 ! Do not apply style to TextView
 
 ```Kotlin
-val tv = moreText
+val tv = textViewElement
 var number = "1234567890"
 var text = " is Number"
 
