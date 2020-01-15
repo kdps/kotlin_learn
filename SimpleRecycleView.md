@@ -31,6 +31,14 @@ class YourCell(item: YourInfo) : SimpleCell<YourInfo, YourCell.ViewHolder>(item)
 }
 ```
 
+# Scroll is Not Smooth
+
+### Maybe SimpleRecyclerView is Contained by NestedScrollView, Just use this code
+
+```Kotlin
+mBinding.srList.setNestedScrollingEnabled(false)
+```
+
 # Update Cell Item
 
 1.Call Function -> mBinding.rvList.updateCell(index, payload)
