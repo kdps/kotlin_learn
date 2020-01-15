@@ -23,7 +23,6 @@ content.addTextChangedListener(object: TextWatcher {
     override fun afterTextChanged(s: Editable?) {
 
     }
-
 })
 ```
 
@@ -41,6 +40,21 @@ content.removeTextChangedListener(object: TextWatcher {
 
     override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
         
+    }
+})
+```
+
+# 4. setAccessibilityDelegate
+
+```
+ content.setAccessibilityDelegate(object : View.AccessibilityDelegate() {
+    override fun sendAccessibilityEvent(host: View?, eventType: Int) {
+        super.sendAccessibilityEvent(host, eventType)
+        if (eventType == AccessibilityEvent.TYPE_VIEW_TEXT_SELECTION_CHANGED){
+              //content.selectionStart
+              //content.selectionEnd
+              //content.setSelection(position)
+        }
     }
 })
 ```
