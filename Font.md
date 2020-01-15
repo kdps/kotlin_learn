@@ -10,16 +10,21 @@
 
 ## 3.2. Multiple
 
+### 3.2.1. TextView
+
+! Do not apply style to TextView
+
 ```Kotlin
 val tv = moreText
-var cnt = commentCount.toString().length + "개 댓글 더보기".length
+var number = "1234567890"
+var text = " is Number"
 
-var text:Spannable = SpannableString(commentCount.toString());
-text.setSpan( TextAppearanceSpan(getContext(), R.style.Text_20_A8A6A6_Bold), 0, commentCount.toString().length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-text.setSpan( StyleSpan(Typeface.BOLD), 0, commentCount.toString().length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+var text:Spannable = SpannableString(number.toString());
+text.setSpan( TextAppearanceSpan(getContext(), R.style.Text_20_A8A6A6_Bold), 0, number.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+text.setSpan( StyleSpan(Typeface.BOLD), 0, number.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 tv.setText(text, SPANNABLE);
 
-text = SpannableString("개 댓글 더보기");
+text = SpannableString(text);
 text.setSpan( TextAppearanceSpan(getContext(), R.style.Text_20_A8A6A6), 0, text.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 tv.append(text);
 ```
