@@ -31,7 +31,15 @@ class YourCell(item: YourInfo) : SimpleCell<YourInfo, YourCell.ViewHolder>(item)
 }
 ```
 
-# Scroll is Not Smooth
+# addOnScrollListener
+```Kotlin
+srList.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+    override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
+    }
+})
+```
+
+# Smooth Scroll is Not Enabled
 
 ### Maybe SimpleRecyclerView is Contained by NestedScrollView, Just use this code
 
