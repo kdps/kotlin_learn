@@ -46,7 +46,7 @@ span.setSpan( TextAppearanceSpan(getContext(), R.style.Text_20_A8A6A6_Bold), 0, 
 span.setSpan( StyleSpan(Typeface.BOLD), 0, number.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 tv.setText(span, TextView.BufferType.SPANNABLE);
 
-span = SpannableString(span);
+span = SpannableString(text);
 span.setSpan( TextAppearanceSpan(getContext(), R.style.Text_20_A8A6A6), 0, text.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 tv.append(text);
 ```
