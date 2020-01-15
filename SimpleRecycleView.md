@@ -39,6 +39,12 @@ class YourCell(item: YourInfo) : SimpleCell<YourInfo, YourCell.ViewHolder>(item)
 mBinding.srList.setNestedScrollingEnabled(false)
 ```
 
+# Insert Cell To Top
+
+```Kotlin
+mBinding.srList.addCell(0, cell)
+```
+
 # Update Cell Item
 
 1.Call Function -> mBinding.rvList.updateCell(index, payload)
@@ -52,7 +58,7 @@ Fragment
 ```Kotlin
 val map = java.util.HashMap<String, Boolean>()
 map.put("hasLike", true)
-mBinding.rvList.updateCell(position, map)
+mBinding.srList.updateCell(position, map)
 ```
 
 Cell
