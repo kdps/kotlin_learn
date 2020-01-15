@@ -44,7 +44,7 @@ var text = " is Number"
 var span:Spannable = SpannableString(number.toString());
 span.setSpan( TextAppearanceSpan(getContext(), R.style.Text_20_A8A6A6_Bold), 0, number.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 span.setSpan( StyleSpan(Typeface.BOLD), 0, number.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-tv.setText(span, SPANNABLE);
+tv.setText(span, TextView.BufferType.SPANNABLE);
 
 span = SpannableString(span);
 span.setSpan( TextAppearanceSpan(getContext(), R.style.Text_20_A8A6A6), 0, text.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
