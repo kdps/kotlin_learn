@@ -1,9 +1,11 @@
 # 1. Inner Class
 
+Inner Class Can Use Variable of Class Variable
+
 ```Kotlin
 class Base {
   inner class Data {
-    fun add {
+    fun add() {
       print("Heelo")
     }
   }
@@ -21,4 +23,24 @@ OR
 
 ```Kotlin
 var data = Data().add()
+```
+
+# Object Class
+
+Object Class Can't Use Variable of Class Variable
+
+```Kotlin
+class Base {
+  object Data {
+    fun add() {
+      print("Heelo")
+    }
+  }
+}
+```
+
+Usage
+
+```Kotlin
+data.add()
 ```
