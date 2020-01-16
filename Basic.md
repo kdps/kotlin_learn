@@ -3,6 +3,12 @@
 
 Maybe Your application is crash
 
+# Bit Operator
+
+| Operator | Instead Function | Example |
+|:---|:---|:---|
+|&|and|1.and(1)|
+
 # Sprintf Function Of C Language, Format Function of Java
 
 ```
