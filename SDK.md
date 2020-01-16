@@ -1,4 +1,4 @@
-
+| Platform | Description | API Level | Value |
 |---|:---:|:---:|---:|
 |Android 8.0|Oreo|26|Build.VERSION_CODES.O|
 |Android 7.1.1|Nougat|25|Build.VERSION_CODES.N_MR1|
