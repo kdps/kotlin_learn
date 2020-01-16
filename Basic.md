@@ -8,7 +8,7 @@ Maybe Your application is crash
 | Operator | Instead Function | Example |
 |:---|:---|:---|
 |&|and|1.and(1)|
-|||or|1.or(1)|
+|\||or|1.or(1)|
 |^|xor|1.xor(1)|
 |~|inv|1.inv(1)|
 
