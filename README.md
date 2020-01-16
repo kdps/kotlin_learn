@@ -7,6 +7,7 @@
 ### [DateTime]
 ### [Dialog]
 ### [Element]
+### [Toast]
 
 # 2. External Plugin
 
@@ -23,3 +24,4 @@
 [Element]: https://github.com/kdps/Kotlin_Learn/blob/master/Element.md
 [NestedScrollView]: https://github.com/kdps/Kotlin_Learn/blob/master/NestedScrollView.md
 [SimpleRecycleView]: https://github.com/kdps/Kotlin_Learn/blob/master/SimpleRecycleView.md
+[Toast]: https://github.com/kdps/Kotlin_Learn/blob/master/Toast.md
