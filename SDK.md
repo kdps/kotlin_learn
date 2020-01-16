@@ -29,18 +29,10 @@
 |Android 1.1|Base|2|Build.VERSION_CODES.BASE_1_1|
 |Android 1.0|Base|1|Build.VERSION_CODES.BASE|
 
-# 1. Check Marshmallow
+# Example
 
 ```Kotlin
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-
-}
-```
-
-# 2. Check Oreo
-
-```Kotlin
-if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 
 }
 ```
