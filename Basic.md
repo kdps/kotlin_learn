@@ -3,7 +3,7 @@
 
 Maybe Your application is crash
 
-# Bit Operator
+# Bit Operation
 
 | Operator | Instead Function | Example |
 |:---|:---|:---|
