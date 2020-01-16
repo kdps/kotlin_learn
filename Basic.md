@@ -12,6 +12,14 @@ Maybe Your application is crash
 |^|xor|1.xor(1)|
 |~|inv|1.inv(1)|
 
+### Use inner print function
+
+```Kotlin
+var x = 1
+var y = 5
+println("x AND y = ${x and y}")
+```
+
 # Sprintf Function Of C Language, Format Function of Java
 
 ```
