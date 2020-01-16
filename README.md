@@ -9,4 +9,4 @@
 
 [Basic]: https://github.com/kdps/Kotlin_Learn/blob/master/Basic.md
 [Class]: https://github.com/kdps/Kotlin_Learn/blob/master/Class.md
-[Class]: https://github.com/kdps/Kotlin_Learn/blob/master/DateTime.md
+[DateTime]: https://github.com/kdps/Kotlin_Learn/blob/master/DateTime.md
