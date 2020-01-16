@@ -3,6 +3,12 @@
 
 Maybe Your application is crash
 
+# Sprintf Of C Language, Format Function of Java
+
+```
+println(java.lang.String.format("%s, %s, %6f : %3f", "A", "B", 3.0, 4.0))
+```
+
 # 1. Activity
 
 ## 1.1 DataBinding (Activity)
