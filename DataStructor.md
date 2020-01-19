@@ -2,9 +2,10 @@
 
 # 1.1. String to Integer
 
-var convertedInt = 0
 
 ```Kotlin
+var convertedInt = 0
+
 val parsedInt = str!!.toIntOrNull()
 if (parsedInt != null) {
     convertedInt = parsedInt
