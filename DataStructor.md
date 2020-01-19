@@ -2,7 +2,7 @@
 
 # 1.1. String to Integer
 
-#### Do not use Integer.parseInt OR toInt, cause it make exception
+#### Do not use Integer.parseInt OR toInt, Cause it make exception
 
 ```Kotlin
 var convertedInt = 0
