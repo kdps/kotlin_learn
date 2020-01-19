@@ -134,11 +134,11 @@ Glide
     .into( mBinding.element )
     
 Glide
-  .with(mActivity!!)
-  .asBitmap()
-  .apply(RequestOptions.centerCropTransform())
-  .load( url )
-  .into( mBinding.element )
+    .with(this)
+    .asBitmap()
+    .apply(RequestOptions.centerCropTransform())
+    .load( url )
+    .into( mBinding.element )
 ```
 
 # 5. Handler
