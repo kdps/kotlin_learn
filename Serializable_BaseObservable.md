@@ -17,3 +17,5 @@ class BaseInformation : Serializable, BaseObservable {
     }
 }
 ```
+
+Extend BaseObservable to Class If use bindable 
