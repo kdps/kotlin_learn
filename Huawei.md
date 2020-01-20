@@ -23,6 +23,9 @@ Maybe You can see that message
 ```
 --------- beginning of crash
 E/AndroidRuntime: FATAL EXCEPTION:
+Process: , PID: 
+java.lang.RuntimeException: 
+Caused by: 
 ```
 
 
