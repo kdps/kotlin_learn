@@ -4,7 +4,7 @@ If you see the below message on running android application
 Attempt to invoke virtual method 'int com.huawei.lcagent.client.LogCollectManager.getUserType()' on a null object reference
 ```
 
-Type below message on call dialog window of cellphone
+Type the below message on call dialog window of cellphone
 
 ```
 *#*#2846579#*#*
