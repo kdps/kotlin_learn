@@ -36,3 +36,18 @@ TimeUnit.MILLISECONDS.toHours(milliseconds)
 TimeUnit.MILLISECONDS.toMinutes(milliseconds)
 TimeUnit.MILLISECONDS.toSeconds(milliseconds)
 ```
+
+# 3. SimpleDateFormat
+
+## 3.1. String to Milliseconds
+
+```Kotlin
+var dateFormat: SimpleDateFormat = SimpleDateFormat("yyyy-MM-dd hh:ii");
+try {
+    var mDate: Date = dateFormat.parse(date);
+    var timeInMilliseconds:Long = mDate.getTime();
+} catch (e: ParseException)
+{
+    print(e.printStackTrace())
+}
+```
