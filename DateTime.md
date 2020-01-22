@@ -11,6 +11,7 @@ var result:String = DataFormat.format("YYmmdd" Date(date)).toString();
 ## 1.2. Convert Milliseconds to Converted String by Datetime Pattern, Use SimpleDateFormat Function
 
 ```Kotlin
+var calendar:Calendar = Calendar.getInstance(Locale.KOREA);
 var date:Long = calendar.timeInMillis // Milliseconds of Now Date, Use Instead of getTimeInMillis
 val pattern = "MM-dd-yyyy"
 val simpleDateFormat = SimpleDateFormat(pattern)
@@ -20,6 +21,7 @@ val date = simpleDateFormat.format(Date(now))
 ## 1.3. Convert Formatted String to Formatted String, Use SimpleDateFormat Function
 
 ```Kotlin
+var calendar:Calendar = Calendar.getInstance(Locale.KOREA);
 var date:Long = calendar.timeInMillis // Milliseconds of Now Date, Use Instead of getTimeInMillis
 val pattern = "MM-dd-yyyy"
 val simpleDateFormat = SimpleDateFormat(pattern)
