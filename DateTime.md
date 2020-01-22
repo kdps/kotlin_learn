@@ -47,8 +47,7 @@ var dateFormat: SimpleDateFormat = SimpleDateFormat("yyyy-MM-dd hh:mm:ss"); // U
 try {
     var mDate: Date = dateFormat.parse(date);
     var timeInMilliseconds:Long = mDate.getTime();
-} catch (e: ParseException)
-{
+} catch (e: ParseException) {
     print(e.printStackTrace())
 }
 ```
