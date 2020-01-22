@@ -25,3 +25,13 @@ val pattern = "MM-dd-yyyy"
 val simpleDateFormat = SimpleDateFormat(pattern)
 val date = simpleDateFormat.parse("12-01-2018")
 ```
+
+# 2. TimeUnit
+
+## 2.1. Convert millisecodns to Hours/Minutes/Seconds
+
+```Kotlin
+TimeUnit.MILLISECONDS.toHours(milliseconds)
+ TimeUnit.MILLISECONDS.toMinutes(milliseconds)
+ TimeUnit.MILLISECONDS.toSeconds(milliseconds)
+```
