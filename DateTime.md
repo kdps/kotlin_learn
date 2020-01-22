@@ -31,7 +31,8 @@ val date = simpleDateFormat.parse("12-01-2018")
 ## 2.1. Convert millisecodns to Hours/Minutes/Seconds
 
 ```Kotlin
+var milliseconds = 1000L
 TimeUnit.MILLISECONDS.toHours(milliseconds)
- TimeUnit.MILLISECONDS.toMinutes(milliseconds)
- TimeUnit.MILLISECONDS.toSeconds(milliseconds)
+TimeUnit.MILLISECONDS.toMinutes(milliseconds)
+TimeUnit.MILLISECONDS.toSeconds(milliseconds)
 ```
