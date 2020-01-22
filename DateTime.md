@@ -42,7 +42,7 @@ TimeUnit.MILLISECONDS.toSeconds(milliseconds)
 ## 3.1. String to Milliseconds
 
 ```Kotlin
-var dateFormat: SimpleDateFormat = SimpleDateFormat("yyyy-MM-dd hh:ii"); // Use Want DateTime Format
+var dateFormat: SimpleDateFormat = SimpleDateFormat("yyyy-MM-dd hh:mm:ss"); // Use Want DateTime Format
 
 try {
     var mDate: Date = dateFormat.parse(date);
