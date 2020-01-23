@@ -22,7 +22,7 @@ println("x AND y = ${x and y}")
 
 # Sprintf Function Of C Language, Format Function of Java
 
-```
+```Kotlin
 println(java.lang.String.format("%s, %s, %6f : %3f", "A", "B", 3.0, 4.0))
 ```
 
