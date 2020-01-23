@@ -1,7 +1,7 @@
 
 ### Do not set tag to ImageView
 
-Maybe Your application is crash
+Maybe Your application to crash
 
 # Bit Operation
 
