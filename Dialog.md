@@ -2,7 +2,7 @@
 
 ## 1.1. Show Dialog (With DataBinding)
 
-Warning : `Do not use android:onClick Event in Layout XML File`
+Warning : `Do not use android:onClick Event in Layout XML File When Use Dialog`
 
 ```Kotlin
 val mDialogBinding: LayoutBasicBinding = DataBindingUtil.inflate(getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater, R.layout.layout_basic, null, false)
