@@ -1,6 +1,6 @@
-# 1. Impossible Error
+# 1. Couldn't resolve errors
 
-### 1.1. Cause Error by Layout on Run Application but Has no error occurred on Fucking Stupid XML Editor
+### 1.1. Cause error by layout on Run application but has no error occurred on fucking stupid `XML Editor`
 
 `Not working Rebuild Project, Clear Project FUCKING SHIT`
 
