@@ -54,6 +54,18 @@ try {
 }
 ```
 
+## 3.2. Parse String
+
+```Kotlin
+var date:Date = SimpleDateFormat("yyyy.MM.dd").parse("2019.05.23".toString())
+```
+
+## 3.3. Convert to Other Format
+
+```Kotlin
+var date:String = SimpleDateFormat("yyyy-MM-dd").format(SimpleDateFormat("yyyy.MM.dd").parse("2019.05.23"))
+```Kotlin
+
 # 4. GregorianCalendar
 
 ```Kotlin
