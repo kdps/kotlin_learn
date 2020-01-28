@@ -11,7 +11,7 @@ Just do it
 
 # 2. Crash Application
 
-Uncheck Regex Box And Find the below message
+Uncheck Regex Box of Debug Windows And Find the below message
 
 ```Kotlin
     --------- beginning of crash
