@@ -1,3 +1,6 @@
+### Cause Error but Has no error
+
+Because java is fucking shit, restart after delete build folder and flush cache
 
 ### Do not set tag to ImageView
 
