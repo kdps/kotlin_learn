@@ -64,7 +64,7 @@ var date:Date = SimpleDateFormat("yyyy.MM.dd").parse("2019.05.23".toString())
 
 ```Kotlin
 var date:String = SimpleDateFormat("yyyy-MM-dd").format(SimpleDateFormat("yyyy.MM.dd").parse("2019.05.23"))
-```Kotlin
+```
 
 # 4. GregorianCalendar
 
