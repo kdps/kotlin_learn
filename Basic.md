@@ -1,6 +1,6 @@
 ### Cause Error but Has no error occurred on Fucking XML Editor
 
-`Not working Rebuild Project FUCKING SHIT`
+`Not working Rebuild Project, Clear Project FUCKING SHIT`
 
 Because java is fucking shit
 
