@@ -53,3 +53,14 @@ try {
     print(e.printStackTrace())
 }
 ```
+
+# 4. GregorianCalendar
+
+```Kotlin
+val c = GregorianCalendar()
+val sdf = SimpleDateFormat("yyyy.MM.dd")
+c.setTime(Date())
+var currentTime = sdf.format(c.time)
+c.add(Calendar.WEEK_OF_MONTH, -1);
+var oneMonthAgoTime = sdf.format(c.time)
+```
