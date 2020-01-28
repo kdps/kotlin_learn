@@ -1,5 +1,7 @@
 ### Cause Error but Has no error
 
+`No working Rebuild Project FUCKING SHIT`
+
 Because java is fucking shit
 
 Just do it
