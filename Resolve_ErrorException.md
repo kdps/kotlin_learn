@@ -1,6 +1,6 @@
 # 1. Couldn't resolve errors
 
-### 1.1. Cause error by layout on Run application but has no error occurred on fucking stupid `XML Editor`
+### 1.1. Cause error by layout file on run application but has no error occurred on fucking stupid `XML Editor`
 
 `Not working Rebuild Project, Clear Project FUCKING SHIT`
 
