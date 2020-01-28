@@ -69,6 +69,8 @@ var dateStr:String = SimpleDateFormat("yyyy-MM-dd").format(date)
 
 # 4. GregorianCalendar
 
+## 4.1. Get Format of One Month Ago Date
+
 ```Kotlin
 val c = GregorianCalendar()
 val sdf = SimpleDateFormat("yyyy.MM.dd")
