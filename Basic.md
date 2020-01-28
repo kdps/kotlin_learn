@@ -1,6 +1,8 @@
 ### Cause Error but Has no error
 
-Because java is fucking shit, restart after delete build folder and flush cache
+Because java is fucking shit, restart after 
+1. delete build folder and flush cache
+2. Menu->File->Invalidate Caches (Retard Fucking Java Dung) /Restart
 
 ### Do not set tag to ImageView
 
