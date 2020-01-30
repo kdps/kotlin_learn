@@ -21,4 +21,4 @@ Uncheck Regex Box of Debug Windows And Find the below message
 
 # 3. Crash Activity
 
-You are fucked. no way to resolve, just do try catch
+You are fucked. no way to check errors, just do try catch
