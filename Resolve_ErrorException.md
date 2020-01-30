@@ -11,7 +11,7 @@ Just do it
 2. Menu->File->Invalidate Caches (Retard Fucking Java Dung) /Restart
 3. It works! fucking retard android
 
-# 2. Crash Application
+# 2. Crash Application, Crash Activity
 
 ![app_crash_no_filter](https://raw.githubusercontent.com/kdps/kotlin_learn/master/Image/app_crash_no_filter.png)
 
@@ -21,7 +21,3 @@ Uncheck Regex Box of Debug Windows And Find the below message
 ```Kotlin
     --------- beginning of crash
 ```
-
-# 3. Crash Activity
-
-You are fucked. no way to check errors, just do try catch to all codes
