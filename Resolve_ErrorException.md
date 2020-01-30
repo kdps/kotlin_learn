@@ -6,15 +6,16 @@
 
 Because java is fucking shit
 
+
+![resolve_cache](https://raw.githubusercontent.com/kdps/kotlin_learn/master/Image/resolve_cache.png)
+
 Just do it
-1. delete build folder and flush cache
-2. Menu->File->Invalidate Caches (Retard Fucking Java Dung) /Restart
-3. It works! fucking retard android
+1. Menu->File->Invalidate Caches (Retard Fucking Java Dung) /Restart
+2. It works! fucking retard android
 
 # 2. Crash Application, Crash Activity
 
 ![app_crash_no_filter](https://raw.githubusercontent.com/kdps/kotlin_learn/master/Image/app_crash_no_filter.png)
-
 
 Uncheck Regex Box of Debug Windows And Find the below message
 
