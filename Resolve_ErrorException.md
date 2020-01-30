@@ -18,3 +18,7 @@ Uncheck Regex Box of Debug Windows And Find the below message
 ```Kotlin
     --------- beginning of crash
 ```
+
+# 3. Crash Activity
+
+You are fucked. no way to resolve, just do try catch
