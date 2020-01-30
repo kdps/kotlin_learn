@@ -28,3 +28,13 @@ var width:Int = 1000
 val params = LinearLayout.LayoutParams(width, ViewGroup.LayoutParams.WRAP_CONTENT)
 bindingView.layoutParams = params
 ```
+
+# 2. Add View
+
+```Kotlin
+var layoutInflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+var inflaterLayout = R.layout.appendLayout
+val mAppendBinding: AppendLayoutBinding = DataBindingUtil.inflate(layoutInflater, inflaterLayout, null, false)
+
+itemList.addView(mAppendBinding.root)
+```
