@@ -18,6 +18,11 @@ var lExtendDTOData = ExtendDTOData()
 lExtendDTOData.data1 = "Example Data1"
 mExtendDTOData.add(lExtendDTOData)
 
+lExtendDTOData.data1 = "Example Data2"
+mExtendDTOData.add(lExtendDTOData)
+
+// Insert Base Array Data
+
 var idx = -1
 
 var baseDTOData = BaseDTOData()
