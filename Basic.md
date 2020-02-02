@@ -1,7 +1,3 @@
-### Do not set tag to ImageView
-
-Maybe Your application to crash
-
 # Bit Operation
 
 | Operator | Instead Function | Example |
