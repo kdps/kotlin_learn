@@ -38,12 +38,12 @@ mMultidimensionalData.put(++index, pushData)
 ### 3.1.2. Get Data
 
 ```Kotlin
-var multidimensionalData: HashMap<Int, HashMap<BaseDTOData, ArrayList<ExtendDTOData>>>
+var mMultidimensionalData: HashMap<Int, HashMap<BaseDTOData, ArrayList<ExtendDTOData>>>
 ```
 
 ```Kotlin
-for(i in 0 until multidimensionalData.count()) {
-  var item = multidimensionalData.get(i) as HashMap<BaseDTOData, ArrayList<ExtendDTOData>>
+for(i in 0 until mMultidimensionalData.count()) {
+  var item = mMultidimensionalData.get(i) as HashMap<BaseDTOData, ArrayList<ExtendDTOData>>
   
   for (key in item.keys) {
       var baseDTOData = key // BaseDTOData
