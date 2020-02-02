@@ -23,7 +23,7 @@ mExtendDTOData.add(lExtendDTOData)
 
 // Insert Base Array Data
 
-var idx = -1
+var index = -1
 
 var baseDTOData = BaseDTOData()
 baseDTOData.data1 = "Example Data1"
@@ -32,7 +32,7 @@ baseDTOData.data2 = "Example Data2"
 var pushData = HashMap<BaseDTOData, ArrayList<ExtendDTOData>>()
 pushData.put(baseDTOData, mExtendDTOData)
 
-mMultidimensionalData.put(++idx, pushData)
+mMultidimensionalData.put(++index, pushData)
 ```
 
 ### 3.1.2. Get Data
