@@ -39,7 +39,9 @@ val mAppendBinding: AppendLayoutBinding = DataBindingUtil.inflate(layoutInflater
 itemList.addView(mAppendBinding.root)
 ```
 
-# Do stuff when view is loaded
+# 3. View Status
+
+## 3.1. Do stuff when view is loaded
 
 ```Kotlin
 var vto: ViewTreeObserver  = mBinding.viewID.getViewTreeObserver();
@@ -48,7 +50,7 @@ var vto: ViewTreeObserver  = mBinding.viewID.getViewTreeObserver();
     });
 ```
 
-# Detect view is shown
+## 3.2. Detect view is shown
 ```Kotlin
 val displayMetrics = DisplayMetrics()
 windowManager.defaultDisplay.getMetrics(displayMetrics)
