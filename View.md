@@ -58,7 +58,7 @@ var height = displayMetrics.heightPixels
 var rect: Rect = Rect()
 if (mBinding.bodys.getGlobalVisibleRect(rect)) {
     var diffElem = (mBinding.view.height 
-        /* It must be start to toolbar and end all contains elements */
+        /* It must be start by bottom of toolbar, bottom of it contains all not overed elements of bottom */
         - (height - mBinding.toolbar.height))
 
     if (scrollY > diffElem) {
