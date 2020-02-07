@@ -50,6 +50,21 @@ var vto: ViewTreeObserver  = mBinding.viewID.getViewTreeObserver();
     });
 ```
 
+Use the this code, If you want detect view is overed layout
+
+```Kotlin
+var vto: ViewTreeObserver  = mBinding.bodys.getViewTreeObserver();
+    vto.addOnGlobalLayoutListener(ViewTreeObserver.OnGlobalLayoutListener() {
+        var diffElem = (mBinding.view.height - (height - mBinding.toolbar.height))
+        
+        if (diffElem < 0) { // Value of not overed in layout is least then zero
+            // When View is not overed in layout
+        } else {
+            // When View is overed in layout
+        }
+    });
+```
+
 ## 3.2. Detect view is shown
 ```Kotlin
 val displayMetrics = DisplayMetrics()
