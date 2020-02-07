@@ -46,7 +46,7 @@ itemList.addView(mAppendBinding.root)
 ```Kotlin
 var vto: ViewTreeObserver  = mBinding.viewID.getViewTreeObserver();
     vto.addOnGlobalLayoutListener(ViewTreeObserver.OnGlobalLayoutListener() {
-        // Do Stuff, Maybe it must be multiple load
+        // You can get size of view, but it multi load 
     });
 ```
 
