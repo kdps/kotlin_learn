@@ -176,3 +176,5 @@ fun parseJson(str: String) : JsonArray? {
   result = jSonObject = jsonParser.parse(str) as JsonArray
 }
 ```
+
+# 8. Extension functions
