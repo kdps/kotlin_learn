@@ -38,3 +38,35 @@ val mAppendBinding: AppendLayoutBinding = DataBindingUtil.inflate(layoutInflater
 
 itemList.addView(mAppendBinding.root)
 ```
+
+# Do stuff when view is loaded
+
+```Kotlin
+var vto: ViewTreeObserver  = mBinding.viewID.getViewTreeObserver();
+    vto.addOnGlobalLayoutListener(ViewTreeObserver.OnGlobalLayoutListener() {
+        // Do stuff
+    });
+```
+
+# Detect view is shown
+```Kotlin
+val displayMetrics = DisplayMetrics()
+windowManager.defaultDisplay.getMetrics(displayMetrics)
+
+var height = displayMetrics.heightPixels
+            
+var rect: Rect = Rect()
+if (mBinding.bodys.getGlobalVisibleRect(rect)) {
+    var diffElem = (mBinding.view.height 
+        /* It must be start to toolbar and end all contains elements */
+        - (height - mBinding.toolbar.height))
+
+    if (scrollY > diffElem) {
+        // View is hidden
+    } else {
+        // View is shown
+    }
+} else {
+    // View is overed
+}
+```
