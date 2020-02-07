@@ -41,27 +41,12 @@ itemList.addView(mAppendBinding.root)
 
 # 3. View Status
 
-## 3.1. Do stuff when view is loaded
+## 3.1. Add Observer
 
 ```Kotlin
 var vto: ViewTreeObserver  = mBinding.viewID.getViewTreeObserver();
     vto.addOnGlobalLayoutListener(ViewTreeObserver.OnGlobalLayoutListener() {
         // Do Stuff, Maybe it must be multiple load
-    });
-```
-
-Use the this code, If you want detect view is overed layout
-
-```Kotlin
-var vto: ViewTreeObserver  = mBinding.bodys.getViewTreeObserver();
-    vto.addOnGlobalLayoutListener(ViewTreeObserver.OnGlobalLayoutListener() {
-        var diffElem = (mBinding.view.height - (height - mBinding.toolbar.height))
-        
-        if (diffElem < 0) { // Value of not overed in layout is least then zero
-            // When View is not overed in layout
-        } else {
-            // When View is overed in layout
-        }
     });
 ```
 
