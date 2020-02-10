@@ -87,7 +87,7 @@ mBinding.element.setImageDrawable(
 
 ```Kotlin
 mBinding.element.setImageDrawable(
-  CommonLib.getDrawable(
+  getDrawable(
     mActivity, 
     R.drawable.image
   )
