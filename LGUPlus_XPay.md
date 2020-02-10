@@ -27,11 +27,11 @@ class XPay {
             super.shouldOverrideKeyEvent(view, event)
             var keyCode: Int = event.getKeyCode();
 
-            if ((keyCode == KeyEvent.KEYCODE_DPAD_LEFT) && mBinding.wvWeb.canGoBack()) {
-                mBinding.wvWeb.goBack();
+            if ((keyCode == KeyEvent.KEYCODE_DPAD_LEFT) && bindingObject.webView.canGoBack()) {
+                bindingObject.webView.goBack();
                 return true;
-            } else if ((keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) && mBinding.wvWeb.canGoForward()) {
-                mBinding.wvWeb.goForward();
+            } else if ((keyCode == KeyEvent.KEYCODE_DPAD_RIGHT) && bindingObject.webView.canGoForward()) {
+                bindingObject.webView.goForward();
                 return true;
             }
 
@@ -230,8 +230,8 @@ class XPay {
     }
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
-        if ((keyCode == KeyEvent.KEYCODE_BACK) && mBinding.wvWeb.canGoBack()) {
-            mBinding.wvWeb.goBack();
+        if ((keyCode == KeyEvent.KEYCODE_BACK) && bindingObject.webView.canGoBack()) {
+            bindingObject.webView.goBack();
             return true;
         }
 
