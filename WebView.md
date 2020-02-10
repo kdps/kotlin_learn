@@ -1,6 +1,6 @@
 ### Options
 
-```
+```Kotlin
 setNetworkAvailable(boolean)
 setVerticalScrollBarEnabled(boolean)
 setHorizontalScrollBarEnabled(boolean)
