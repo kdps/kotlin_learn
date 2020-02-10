@@ -5,6 +5,9 @@ class XPay : AppCompatActivity() {
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        bindingObject = DataBindingUtil.setContentView(this, R.layout.layout_xpay)
+
         bindingObject.webView.run {
           xPayBackendURL = "http://www.example.com/xpay.php"
           var requestBody = "param1=" + URLEncoder.encode("param1", "UTF-8") +
