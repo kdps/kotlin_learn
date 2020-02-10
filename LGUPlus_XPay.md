@@ -222,7 +222,7 @@ class XPay : AppCompatActivity() {
         var handler : Handler? = Handler()
     }
 
-// If you want use Activity
+// If you want to use Activity
 
 
 /*    
