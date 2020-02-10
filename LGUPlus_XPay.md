@@ -222,6 +222,21 @@ class XPay : AppCompatActivity() {
         var handler : Handler? = Handler()
     }
 
+// If you want use Activity
+
+
+/*    
+        class WebBridge {
+
+        lateinit var mContext: Context
+
+
+        constructor(c: Context ) {
+            mContext = c;
+        }
+*/
+
+
     class WebBridge {
 
         @JavascriptInterface
