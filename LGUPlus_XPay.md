@@ -1,5 +1,5 @@
 ```Kotlin
-class XPay {
+class XPay : AppCompatActivity() {
 
     lateinit var bindingObject: ~~
     
