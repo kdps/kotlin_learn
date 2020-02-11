@@ -14,7 +14,7 @@ Just do it
 
 ![app_crash_no_filter](https://raw.githubusercontent.com/kdps/kotlin_learn/master/Image/app_crash_no_filter.png)
 
-Uncheck Regex Box of Debug Windows And Find the below message
+Uncheck Regex Box, Check `No Filter` of Debug Windows And Find the below message
 
 ```Kotlin
     --------- beginning of crash
