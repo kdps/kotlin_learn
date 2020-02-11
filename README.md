@@ -8,6 +8,9 @@
 ### [Dialog]
 ### [Element]
 ### [Toast]
+### [Collection]
+### [Extension_Functions]
+### [Font]
 
 # 2. External Plugin
 
@@ -25,3 +28,7 @@
 [NestedScrollView]: https://github.com/kdps/Kotlin_Learn/blob/master/NestedScrollView.md
 [SimpleRecycleView]: https://github.com/kdps/Kotlin_Learn/blob/master/SimpleRecycleView.md
 [Toast]: https://github.com/kdps/Kotlin_Learn/blob/master/Toast.md
+[Collection]: https://github.com/kdps/Kotlin_Learn/blob/master/Collection.md
+[Extension_Functions]: https://github.com/kdps/Kotlin_Learn/blob/master/Extension_Functions.md
+[Font]: https://github.com/kdps/Kotlin_Learn/blob/master/Font.md
+
