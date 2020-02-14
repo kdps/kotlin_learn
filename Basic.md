@@ -178,3 +178,15 @@ fun parseJson(str: String) : JsonArray? {
 ```
 
 # 8. Extension functions
+
+# 9. Inner Scope Function
+
+```Kotlin
+fun countThings(list: List): Int {
+    fun _countThings(list: List, acc: Int): Int {
+        // stuff
+        _countThings(list, acc + 1)
+    }
+    return countThings(list, 0)
+}
+```
