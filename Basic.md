@@ -15,6 +15,25 @@ var y = 5
 println("x AND y = ${x and y}")
 ```
 
+### Detect application is launched
+
+``` Kotlin
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+
+    val PREFS_NAME = "MyPrefsFile"
+
+    val settings = getSharedPreferences(PREFS_NAME, 0)
+
+    if (settings.getBoolean("my_first_time", true)) {
+        // First launched
+        settings.edit().putBoolean("my_first_time", false).commit()
+    } else {
+        // Other
+    }
+}
+```
+
 # Sprintf Function Of C Language, Format Function of Java
 
 ```Kotlin
