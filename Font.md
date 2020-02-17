@@ -50,3 +50,21 @@ span = SpannableString(text);
 span.setSpan( TextAppearanceSpan(getContext(), R.style.Text_20_A8A6A6), 0, text.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 tv.append(text);
 ```
+
+### 3.2.2. Span Click Event
+
+```Kotlin
+var example = "Example"
+var text: Spannable = SpannableString(example)
+val clickableSpan1 = object : ClickableSpan() {
+    override fun onClick(widget: View) {
+        findSns()
+    }
+}
+text.setSpan(clickableSpan1, 0, example.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+text.setSpan(TextAppearanceSpan(mActivity, R.style.Text_20_Basic), 0, example.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+text.setSpan(StyleSpan(Typeface.BOLD), 0, example.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+
+appendTarget.append(text)
+appendTarget.movementMethod = LinkMovementMethod.getInstance()
+```
