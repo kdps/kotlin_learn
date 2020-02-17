@@ -39,6 +39,17 @@ class YourActivity : BaseActivity() {
 }
 ```
 
+## 1.2 View Email Intent
+
+```Kotlin
+val email = Intent(Intent.ACTION_SEND)
+email.type = "plain/text"
+email.putExtra(Intent.EXTRA_EMAIL, arrayOf("example@domain.com"))
+email.putExtra(Intent.EXTRA_SUBJECT, "subject")
+email.putExtra(Intent.EXTRA_TEXT, "content")
+startActivity(email)
+```
+
 # 2. Fragment
 
 ## 2.1 DataBinding (Fragment)
