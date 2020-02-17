@@ -19,17 +19,21 @@ fun AppCompatActivity.scrollToView(scrollViewParent: ScrollView, view: View) {
     scrollViewParent.smoothScrollTo(0, childOffset.y)
 }
 
-fun AppCompatActivity.runInstagram() {
-    val app = "com.instagram.android"
+fun launchApp(package:String) {
+    val app = package
     try {
         startActivity(packageManager.getLaunchIntentForPackage(app))
     } catch (e: Exception) {
         try {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$app")))
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + app)))
         } catch (e: Exception) {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$app")))
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + app)))
         }
     }
+}
+
+fun AppCompatActivity.runInstagram() {
+    launchApp("com.instagram.android")
 }
 
 fun AppCompatActivity.getDisplayWidth(): Int {
