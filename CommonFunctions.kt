@@ -21,6 +21,7 @@ fun AppCompatActivity.scrollToView(scrollViewParent: ScrollView, view: View) {
 
 fun launchApp(package:String) {
     val app = package
+    
     try {
         startActivity(packageManager.getLaunchIntentForPackage(app))
     } catch (e: Exception) {
@@ -77,6 +78,10 @@ fun AppCompatActivity.setupUI(view:View, activity: AppCompatActivity) {
 
 fun View.hidden () {
     this.visibility = View.GONE
+}
+
+fun View.shown () {
+    this.visibility = View.VISIBLE
 }
 
 fun ClearEditText.disableEdit () {
