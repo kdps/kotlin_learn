@@ -15,7 +15,7 @@ var y = 5
 println("x AND y = ${x and y}")
 ```
 
-### Detect application is launched
+### Detect application is first launched
 
 ``` Kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
