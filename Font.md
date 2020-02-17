@@ -54,11 +54,16 @@ tv.append(text);
 ### 3.2.2. Span Click Event
 
 ```Kotlin
+var start = "Start"
 var example = "Example"
+
+text.setSpan(TextAppearanceSpan(mActivity, R.style.Text_20_Basic), 0, start.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+appendTarget.setText(text, TextView.BufferType.SPANNABLE)
+
 var text: Spannable = SpannableString(example)
 val clickableSpan1 = object : ClickableSpan() {
     override fun onClick(widget: View) {
-        findSns()
+        doEvent()
     }
 }
 text.setSpan(clickableSpan1, 0, example.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
