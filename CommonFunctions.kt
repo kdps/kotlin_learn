@@ -1,5 +1,12 @@
 package co.extentions.commonfunctions
 
+fun AppCompatActivity.toastShort(message:String) {
+    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+}
+
+fun AppCompatActivity.toastLong(message:String) {
+    Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+}
 
 fun AppCompatActivity.getDeepChildOffset(mainParent: ViewGroup, parent: ViewParent, child: View, accumulatedOffset: Point) {
     val parentGroup = parent as ViewGroup
