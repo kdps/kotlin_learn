@@ -17,3 +17,7 @@ Ctrl + G
 # View code line of covered function 
 
 Alt + Q
+
+# Find the text to iterator 
+
+Alt + J
