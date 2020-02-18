@@ -21,3 +21,7 @@ Alt + Q
 # Iterable find text 
 
 Alt + J
+
+# Generate data class
+
+Alt + K
