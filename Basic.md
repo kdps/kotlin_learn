@@ -34,6 +34,24 @@ override fun onCreate(savedInstanceState: Bundle?) {
 }
 ```
 
+# forEach Indexed
+
+```Kotlin
+var result = ""
+val data = arrayOf("1", "2", "3", "4", "5")
+
+run loop@{
+    data.forEachIndexed { index, string ->
+        if (index == 3) {
+            result = string
+            return@loop
+        }
+    }
+}
+
+print(result)
+```
+
 # Sprintf Function Of C Language, Format Function of Java
 
 ```Kotlin
