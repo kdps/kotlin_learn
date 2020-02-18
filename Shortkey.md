@@ -25,3 +25,11 @@ Alt + J
 # Generate data class
 
 Alt + K
+
+# Surround with
+
+Ctrl + Alt + T
+
+# Goto related layout xml
+
+Ctrl + Alt + B
