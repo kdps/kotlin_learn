@@ -37,3 +37,7 @@ Ctrl + Alt + B
 # Popup switcher
 
 Ctrl + Tab
+
+# Copy and put
+
+Ctrl + D
