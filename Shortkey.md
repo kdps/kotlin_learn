@@ -18,6 +18,6 @@ Ctrl + G
 
 Alt + Q
 
-# Find the text to iterator 
+# Iterable find text 
 
 Alt + J
