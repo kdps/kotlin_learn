@@ -13,3 +13,7 @@ Ctrl + UP/DOWN Arrow
 # Goto Line/Column
 
 Ctrl + G
+
+# View code line of covered function 
+
+Alt + Q
