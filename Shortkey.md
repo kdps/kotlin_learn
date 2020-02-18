@@ -33,3 +33,7 @@ Ctrl + Alt + T
 # Goto related layout xml
 
 Ctrl + Alt + B
+
+# Popup switcher
+
+Ctrl + Tab
