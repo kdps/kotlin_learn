@@ -9,3 +9,7 @@ Ctrl + Alt + UP/DOWN Arrow
 # Move scroll of screen to up/down
 
 Ctrl + UP/DOWN Arrow
+
+# Select all covered text of select text
+
+Ctrl + Q
