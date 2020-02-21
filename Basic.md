@@ -15,6 +15,22 @@ android:layout_marginRight="?android:attr/actionBarSize"
 OR
 
 android:layout_marginEnd="?android:attr/actionBarSize"
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@android:color/holo_red_dark">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="abc"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginRight="?android:attr/actionBarSize"
+        android:gravity="center"/>
+
+</android.support.v7.widget.Toolbar>
 ```
 
 ### Use inner print function
