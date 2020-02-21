@@ -7,6 +7,16 @@
 |^|xor|1.xor(1)|
 |~|inv|1.inv(1)|
 
+### Title is not centered when use setNavigationIcon
+
+```XML
+android:layout_marginRight="?android:attr/actionBarSize"
+
+OR
+
+android:layout_marginEnd="?android:attr/actionBarSize"
+```
+
 ### Use inner print function
 
 ```Kotlin
