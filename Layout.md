@@ -8,6 +8,9 @@
     
     <data>
         <import type="android.view.Gravity" />
+        
+        <variable ...
+                  
     </data>
     
     
