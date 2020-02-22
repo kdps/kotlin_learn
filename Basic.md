@@ -102,6 +102,13 @@ class YourActivity : BaseActivity() {
 }
 ```
 
+## 1.2 Use Onclick Event on LAYOUT_INFLATER_SERVICE
+
+```Kotlin
+var layoutInflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+var mBinding = DataBindingUtil.inflate(layoutInflater, R.layout.layout_example, /* Use this */ mBinding.itemsContainedView /* Use this */, false)
+```
+
 ## 1.2 View Email Intent
 
 ```Kotlin
