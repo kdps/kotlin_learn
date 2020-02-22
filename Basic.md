@@ -106,7 +106,11 @@ class YourActivity : BaseActivity() {
 
 ```Kotlin
 var layoutInflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-var mBinding = DataBindingUtil.inflate(layoutInflater, R.layout.layout_example, /* Use this */ mBinding.itemsContainedView /* Use this */, false)
+var mExampleBinding = DataBindingUtil.inflate(layoutInflater, R.layout.layout_example, /* Use this */ mBinding.itemsContainedView /* Use this */, false)
+
+mExampleBinding.tvView.setOnClickListener { v ->
+    Toast.makeText(mActivity, "Hello World", Toast.LENGTH_SHORT).show()
+}
 ```
 
 ## 1.2 View Email Intent
