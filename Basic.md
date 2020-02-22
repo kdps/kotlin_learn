@@ -106,7 +106,8 @@ class YourActivity : BaseActivity() {
 
 ```Kotlin
 var layoutInflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-var mExampleBinding = DataBindingUtil.inflate(layoutInflater, R.layout.layout_example, /* Use this */ mBinding.itemsContainedView /* Use this */, false)
+var containedView =  /* Use this */ mBinding.itemsContainedView /* Use this */
+var mExampleBinding = DataBindingUtil.inflate(layoutInflater, R.layout.layout_example, containedView, false)
 
 mExampleBinding.tvView.setOnClickListener { v ->
     Toast.makeText(mActivity, "Hello World", Toast.LENGTH_SHORT).show()
