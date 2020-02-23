@@ -291,7 +291,7 @@ fun countThings(list: List): Int {
 
 # 10. Use FloatingActionButton
 
-```
+```XML
 <android.support.design.widget.FloatingActionButton
     android:id="@+id/fab_up"
     android:layout_width="@dimen/px_120"
