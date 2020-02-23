@@ -288,3 +288,29 @@ fun countThings(list: List): Int {
     return countThings(list, 0)
 }
 ```
+
+# 10. Use FloatingActionButton
+
+```
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/fab_up"
+    android:layout_width="@dimen/px_120"
+    android:layout_height="@dimen/px_120"
+    android:layout_above="@+id/rv_list"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="right|bottom"
+    android:layout_marginRight="@dimen/px_20"
+    android:layout_marginBottom="@dimen/px_200"
+    android:background="@android:color/transparent"
+    android:backgroundTint="@android:color/transparent"
+    android:clickable="true"
+    android:onClick="@{(v) -> activity.onClick(v)}"
+    android:scaleType="center"
+    app:background="@android:color/transparent"
+    app:borderWidth="0dp"
+    app:elevation="0dp"
+    app:fabSize="auto"
+    app:srcCompat="@drawable/fab_image"
+    />
+```
