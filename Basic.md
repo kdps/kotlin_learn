@@ -1,4 +1,5 @@
 # Bit Operation
+# 비트연산자
 
 | Operator | Instead Function | Example |
 |:---|:---|:---|
@@ -8,6 +9,7 @@
 |~|inv|1.inv(1)|
 
 ### Title is not centered when use setNavigationIcon
+### setNavigationIcon를 사용할때 타이틀이 중앙으로 정렬이 안될경우
 
 ```XML
 android:layout_marginRight="?android:attr/actionBarSize"
@@ -33,7 +35,7 @@ android:layout_marginEnd="?android:attr/actionBarSize"
 </android.support.v7.widget.Toolbar>
 ```
 
-### Use inner print function
+### Use inner print function by variable
 
 ```Kotlin
 var x = 1
@@ -42,6 +44,7 @@ println("x AND y = ${x and y}")
 ```
 
 ### Detect application is first launched
+### 최초 어플리케이션 시작 확인
 
 ``` Kotlin
 override fun onCreate(savedInstanceState: Bundle?) {
@@ -79,6 +82,7 @@ print(result)
 ```
 
 # Sprintf Function Of C Language, Format Function of Java
+# C Sprintf, 자바 Format 함수
 
 ```Kotlin
 println(java.lang.String.format("%s, %s, %6f : %3f", "A", "B", 3.0, 4.0))
@@ -87,6 +91,7 @@ println(java.lang.String.format("%s, %s, %6f : %3f", "A", "B", 3.0, 4.0))
 # 1. Activity
 
 ## 1.1 DataBinding (Activity)
+## 1.1 엑티비티 데이터바인딩
 
 Layout XML Name : activity_basic.xml
 
@@ -103,6 +108,7 @@ class YourActivity : BaseActivity() {
 ```
 
 ## 1.2 Use Onclick Event on LAYOUT_INFLATER_SERVICE
+## 1.2 LAYOUT_INFLATER_SERVICE에서 onClick 이벤트 사용
 
 ```Kotlin
 var layoutInflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
@@ -115,6 +121,7 @@ mExampleBinding.tvView.setOnClickListener { v ->
 ```
 
 ## 1.2 View Email Intent
+## 1.2 이메일 인텐트 뷰
 
 ```Kotlin
 val email = Intent(Intent.ACTION_SEND)
@@ -151,6 +158,7 @@ class YourFragment : BaseFragment() {
 ```
 
 ## 2.2 Finish Fragment Of Activity
+## 2.2 엑티비티의 프레그먼트 Finish
 
 ```Kotlin
 ((activity as YourActivity).getFragment() as YourFragment).fragmentFinish()
@@ -158,7 +166,8 @@ class YourFragment : BaseFragment() {
 
 # 3. Drawable
 
-## 3.1 Set Drawable To Element
+## 3.1 Set Image Drawable To Element
+## 3.1 엘리먼트 요소에 이미지 적용하기
 
 ```Kotlin
 var imageDrawable = R.drawable.image
@@ -183,6 +192,7 @@ mBinding.element.setImageDrawable(
 # 4. Glide
 
 ## 4.1 Rounded Image
+## 4.1 각진 이미지
 
 ```Kotlin
 var requestOptions = RequestOptions()
@@ -196,6 +206,7 @@ Glide
 ```
 
 ## 4.2 Circle Crop Image
+## 4.2 둥근 이미지
 
 ```Kotlin
 Glide
@@ -235,6 +246,7 @@ Handler().postDelayed({
 # 6. Service
 
 ## 6.1 Detect Network is Connected
+## 6.1 네트워크가 접속되었는지 확인
 
 ```Kotlin
 fun isNetworkConnected(mActivity: Activity) : Boolean {
