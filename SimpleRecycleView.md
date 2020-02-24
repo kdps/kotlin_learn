@@ -39,6 +39,24 @@ srList.addOnScrollListener(object : RecyclerView.OnScrollListener() {
 })
 ```
 
+Scroll Find by Item Position
+
+```Kotlin
+srList.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+    override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
+        val currentFirstVisible = mLayoutManager.findFirstVisibleItemPosition()
+
+        if (currentFirstVisible > firstVisibleInListview) {
+            // UP
+        } else {
+            // DOWN
+        }
+        
+        firstVisibleInListview = currentFirstVisible
+    }
+}
+```
+
 # Smooth Scroll is Not Enabled
 
 ### Maybe SimpleRecyclerView is Contained by NestedScrollView, Just use this code
