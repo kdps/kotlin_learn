@@ -59,6 +59,54 @@ mBinding.rvList.addOnScrollListener(object : RecyclerView.OnScrollListener() {
 }
 ```
 
+Toggle when up/down
+
+```Kotlin
+var beforeY = -1
+var marginHeight = -1
+var typeScroll = ""
+
+mBinding.rvList.run {
+    addOnScrollListener(object : RecyclerView.OnScrollListener() {
+        override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
+            if (marginHeight == -1) {
+                if (dy > 0 && mBinding.llBar.visibility == View.VISIBLE) { // DOWN
+                    mBinding.llBar.visibility = View.GONE
+                    typeScroll = "down"
+                } else if (dy < 0 && mBinding.llBar.visibility != View.VISIBLE) { // UP
+                    mBinding.llBar.visibility = View.VISIBLE
+                    typeScroll = "up"
+                }
+
+                if (dy != 0) {
+                    marginHeight = mBinding.llBar.height
+                    beforeY = dy
+                }
+            } else { // Stop event when changed status of visible
+                if (typeScroll == "up") {
+                    if (dy < beforeY && mBinding.llBar.visibility == View.VISIBLE) {
+                        mBinding.llBar.visibility = View.GONE
+                        marginHeight = -1
+                    } else { // Otherwise
+                        typeScroll = "bool"
+                    }
+                } else if (typeScroll == "down") {
+                    print("down" + dy.toString() + "//" + marginHeight.toString() + "\n")
+                    if (dy > beforeY && mBinding.llBar.visibility != View.VISIBLE) {
+                        mBinding.llBar.visibility = View.VISIBLE
+                        marginHeight = -1
+                    } else { // Otherwise
+                        typeScroll = "bool"
+                    }
+                } else if (typeScroll == "bool") { // Otherwise
+                    marginHeight = -1
+                }
+            }
+        }
+    }
+}
+```
+
 # Smooth Scroll is Not Enabled
 
 ### Maybe SimpleRecyclerView is Contained by NestedScrollView, Just use this code
