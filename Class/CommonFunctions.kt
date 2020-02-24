@@ -18,6 +18,10 @@ fun AppCompatActivity.getDeepChildOffset(mainParent: ViewGroup, parent: ViewPare
     getDeepChildOffset(mainParent, parentGroup.parent, parentGroup, accumulatedOffset)
 }
 
+var beforeY = -1
+var marginHeight = -1
+var typeScroll = ""
+
 fun toggleOnScrolled(v: View , dx: Int, dy: Int) {
     if (marginHeight == -1) {
         if (dy > 0 && v.visibility == View.VISIBLE) { // DOWN
