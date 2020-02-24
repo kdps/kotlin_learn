@@ -18,6 +18,41 @@ fun AppCompatActivity.getDeepChildOffset(mainParent: ViewGroup, parent: ViewPare
     getDeepChildOffset(mainParent, parentGroup.parent, parentGroup, accumulatedOffset)
 }
 
+fun toggleOnScrolled(v: View , dx: Int, dy: Int) {
+    if (marginHeight == -1) {
+        if (dy > 0 && v.visibility == View.VISIBLE) { // DOWN
+            v.visibility = View.GONE
+            typeScroll = "down"
+        } else if (dy < 0 && v.visibility != View.VISIBLE) { // UP
+            v.visibility = View.VISIBLE
+            typeScroll = "up"
+        }
+
+        if (dy != 0) {
+            marginHeight = v.height
+            beforeY = dy
+        }
+    } else { // Stop event when changed status of visible
+        if (typeScroll == "up") {
+            if (dy < beforeY && v.visibility == View.VISIBLE) {
+                v.visibility = View.GONE
+                marginHeight = -1
+            } else { // Otherwise
+                typeScroll = "bool"
+            }
+        } else if (typeScroll == "down") {
+            if (dy > beforeY && v.visibility != View.VISIBLE) {
+                v.visibility = View.VISIBLE
+                marginHeight = -1
+            } else { // Otherwise
+                typeScroll = "bool"
+            }
+        } else if (typeScroll == "bool") { // Otherwise
+            marginHeight = -1
+        }
+    }
+}
+
 fun AppCompatActivity.scrollToView(scrollViewParent: ScrollView, view: View) {
     // Get deepChild Offset
     val childOffset = Point()
