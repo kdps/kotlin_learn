@@ -42,7 +42,9 @@ srList.addOnScrollListener(object : RecyclerView.OnScrollListener() {
 Scroll Find by Item Position
 
 ```Kotlin
-srList.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+var firstVisibleInListview: Int = -1
+
+mBinding.rvList.addOnScrollListener(object : RecyclerView.OnScrollListener() {
     override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
         val currentFirstVisible = mLayoutManager.findFirstVisibleItemPosition()
 
