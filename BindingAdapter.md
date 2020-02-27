@@ -10,3 +10,19 @@ fun setBottomMargin(view: View, bottomMargin: Float) {
     view.layoutParams = layoutParams;
 }
 ```
+
+```Kotlin
+@BindingAdapter("android:debugValue")
+fun debugValue(view: View, msg: String, tag: String) {
+    Log.d(tag, msg)
+}
+```
+
+```Kotlin
+@BindingAdapter("android:onClickMessage")
+fun onClickMessage(view: View, msg: String) {
+    view.setOnClickListener(View.OnClickListener {
+        Toast.makeText(it.context, msg, Toast.LENGTH_SHORT).show()
+    })
+}
+```
