@@ -1,3 +1,5 @@
+# 1. Setter
+
 https://stackoverflow.com/questions/34832578/android-databinding-how-to-get-dimensions-from-dimens-xml/34835249
 
 Use Dimention to layout_marginBottom Attribute
@@ -24,5 +26,14 @@ fun onClickMessage(view: View, msg: String) {
     view.setOnClickListener(View.OnClickListener {
         Toast.makeText(it.context, msg, Toast.LENGTH_SHORT).show()
     })
+}
+```
+
+# 2. Getter
+
+```Kotlin
+@InverseBindingAdapter(attribute = "android:text", event = "android:textAttrChanged")
+public static String getTextString(TextView view) {
+    return view.getText().toString();
 }
 ```
