@@ -33,7 +33,7 @@ fun onClickMessage(view: View, msg: String) {
 
 ```Kotlin
 @InverseBindingAdapter(attribute = "android:text", event = "android:textAttrChanged")
-public static String getTextString(TextView view) {
-    return view.getText().toString();
+fun getTextString(view: TextView): String {
+    return view.text
 }
 ```
