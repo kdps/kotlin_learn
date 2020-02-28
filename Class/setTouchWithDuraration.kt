@@ -3,7 +3,7 @@ package co.extentions.settouchwithduraration
 /*
 val touchDuraration = 5000
 val moveDuraratioon = 5000
-activity!!.setOnTouchWithDuraration(llItem, touchDuraration, moveDuraratioon){ v: Boolean? ->
+activity!!.setOnTouchWithDuraration(flLayer, touchDuraration, moveDuraratioon){ v: Boolean? ->
     if (v == true) {
         // short key press
     } else {
