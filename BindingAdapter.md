@@ -47,6 +47,7 @@ fun loadImage(view: ImageView, path: String) {
             .load(path)
             .into(view)
 }
+
 @BindingAdapter("android:debugValue")
 fun setBindingDebugValue(view: View, msg: String, tag: String) {
     Log.d(tag, msg)
