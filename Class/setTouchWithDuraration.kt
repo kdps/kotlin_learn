@@ -1,8 +1,20 @@
 package co.extentions.settouchwithduraration
 
-var pressStartTime: Long = 0
-var pressedX: Float = 0.toFloat()
-var pressedY: Float = 0.toFloat()
+/*
+val touchDuraration = 5000
+val moveDuraratioon = 5000
+activity!!.setOnTouchWithDuraration(llItem, touchDuraration, moveDuraratioon){ v: Boolean? ->
+    if (v == true) {
+        // short key press
+    } else {
+        // long key press
+    }
+}
+*/
+
+private var pressStartTime: Long = 0
+private var pressedX: Float = 0.toFloat()
+private var pressedY: Float = 0.toFloat()
 
 fun FragmentActivity.distance(x1: Float, y1: Float, x2: Float, y2: Float): Float {
     val dx = x1 - x2
